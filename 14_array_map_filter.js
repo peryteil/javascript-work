@@ -54,6 +54,25 @@ console.log('3보다 큰 수 정렬하기');
 newArr = values.filter((x) => x > 3).sort((x, y) => x-y);
 console.log(newArr);
 
-// 5. find() 함수
+// 5. findIndex() 함수
+console.log('find 함수로 값 찾기');
+console.log('장원영은 ' + iveMembers.
+  findIndex((x) => x ==='장원영')+ '번째');
+  
+// 6. reduce(p, n) 함수
+// p : previous(이전) , next : 다음값, 초기값
+// 문제 : 배열의 합
 
-// 6. reduce() 함수
+let sumValue = values.reduce((x,y)=> Math.max(x,y));
+
+console.log(sumValue);
+
+// 문제 : 배열의 최대값
+
+let maxValue = values.reduce((x,y) => Math.max(x,y));
+console.log(maxValue);
+
+// 문제 : 배열의 최소값
+
+let minValue = values.reduce((x,y) => Math.min(x,y));
+console.log(minValue);
