@@ -49,9 +49,10 @@ const results = values.filter(num => num > 3);
 console.log(results);
 
 // 3보다 큰 수 찾아서 오름차순 정렬하기
-
-const result = values.filter(num => num > 3).sort((a, b) => a - b);
-console.log(result)
+let newArr;
+console.log('3보다 큰 수 정렬하기');
+newArr = values.filter((x) => x > 3).sort((x, y) => x-y);
+console.log(newArr);
 
 // 5. find() 함수
 
